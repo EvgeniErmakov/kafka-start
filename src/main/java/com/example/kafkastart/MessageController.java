@@ -18,6 +18,6 @@ public class MessageController {
 
     @PostMapping
     public void publish(@RequestBody String text) {
-        kafkaTemplate.send("third_topic", text);
+        kafkaTemplate.send("5_topic", text);
     }
 }
