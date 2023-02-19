@@ -19,4 +19,13 @@ public class KafkaStartApplication {
             kafkaTemplate.send("third_topic", "hello kafka11!");
         };
     }
+
+    /*
+    @Bean
+    public ApplicationRunner runner(KafkaTemplate<String, String> template) {
+        return args -> {
+            template.send("topic1", "test");
+        };
+    }
+     */
 }
